@@ -12,7 +12,7 @@
     <link href="/css/main.css" rel="stylesheet">
 
     <!-- Scripts -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/up.js'])
 
     <style>
         .sticky {
@@ -23,8 +23,6 @@
     </style>
 
 </head>
-
-
 
 <!--<link rel="stylesheet" href="/build/assets/app-DFbZPSAc.css">-->
 
@@ -163,14 +161,13 @@
 </footer>
 
 
-<a href="javascript:void(0)" class="mq back-to-top c p w t fa jb lb zb od pd ge ye ii pi vi flex">
+<a href="javascript:void(0)" class="btn-up mq back-to-top c p w t fa jb lb zb od pd ge ye ii pi vi flex">
     <span class="eb nb bc hd le je oe"></span>
 </a>
 
-{{--<script data-cfasync="false" src="https://go-tailwind.preview.uideck.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">--}}
-</script>
+{{--<script data-cfasync="false" src="https://go-tailwind.preview.uideck.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>--}}
+
 <script>
-    //
     function toggleClass() {
         const html = document.getElementById("html");
         console.log({ html })
