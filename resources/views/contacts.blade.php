@@ -1,3 +1,3 @@
-<div>
-    <!-- Let all your things have their places; let each part of your business have its time. - Benjamin Franklin -->
-</div>
+<x-main-layout>
+    <h1>layout</h1>
+</x-main-layout>
