@@ -95,7 +95,7 @@
     </div>
 </header>
 
-<section id="home" class="e da _d bh ig gl cp to">
+<section id="home" class="mb-3 e da _d bh pb-3 gl cp to">
     <div class="rf xi">
         <div class="ja hb md od pd">
             <img src="/img/forest.jpeg" alt="photo">
@@ -103,20 +103,14 @@
 
         <div class="ja hb md od">
             <div class="hc qf un">
-                <h1 class="logo-text">На сайте будет публиковаться актуальная информация о жизни и деятельности садового
-                    товарищества ТСН СНТ Загорье.
-                </h1>
-
-                <p class="wow pa sh gi">
-                    Уважаемые члены нашего товарищества, настоятельно рекомендуем вам просматривать наш сайт на предмет новостей, объявлений, открытых голосований и прочей информации не менее одного раза в месяц!
-                </p>
+                <x-foo :message="$message"/>
 
             </div>
         </div>
     </div>
 </section>
 
-<footer class="wow fadeInUp zg fl bp" data-wow-delay=".2s">
+<footer class="wow fadeInUp" data-wow-delay=".2s">
     <div class="rf xi">
         <div class="ja hb md">
             <div class="hc rf sk/2 am/12 qn/12 vp/12">

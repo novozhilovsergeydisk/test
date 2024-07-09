@@ -6,7 +6,15 @@
     color: rgb(121 128 138 / var(--tw-text-opacity));
 }
 
+.title-text {
+    color: floralwhite;
+}
+
 .btn-up_hide {
+    display: none;
+}
+
+.hide {
     display: none;
 }
 

@@ -4,7 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('main');
+    return view('main', ["message"=>""]);
 });
 
 Route::get('/contacts', function () {
