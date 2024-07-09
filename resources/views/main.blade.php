@@ -28,7 +28,7 @@
 
 <body class="zj">
 
-<header id="navbar" class="header d x q hc">
+<header id="navbar" class="header d x q hc header">
     <div class="hb hc md sf xn yn mo xp 2xl:ud-px-20">
         <div class="e ga kc un wp">
             <a href="/" class="gb text-white">
@@ -95,7 +95,7 @@
     </div>
 </header>
 
-<section id="home" class="mb-3 e da _d bh pb-3 gl cp to">
+<section id="home" class="mb-3 e da _d bh pb-3 to"> <!-- class: gl -->
     <div class="rf xi">
         <div class="ja hb md od pd">
             <img src="/img/forest.jpeg" alt="photo">

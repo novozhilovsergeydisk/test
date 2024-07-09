@@ -566,8 +566,8 @@ html {
     scroll-behavior: smooth;
 }
 .header {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
+    /*padding-top: 1.25rem;*/
+    /*padding-bottom: 1.25rem;*/
 }
 .sticky {
     position: fixed !important;
