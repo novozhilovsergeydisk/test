@@ -27,8 +27,6 @@ Route::get('/main', function () {
 
 Route::get('/dashboard', function () {
 //    $user = DB::connection('snt')->select('select * from clients where id = ?', [1]);
-    $user = DB::select('select * from users where id = ?', [1]);
-    dump($user);
 
     if (Auth::check()) {
         /**
@@ -37,6 +35,8 @@ Route::get('/dashboard', function () {
          */
         $id = Auth::user()->id;
         dump($id);
+        $user = DB::select('select * from users where id = ?', [$id]);
+        dump($user);
     }
 //    return;
     return view('dashboard');
