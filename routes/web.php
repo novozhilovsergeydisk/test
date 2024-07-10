@@ -2,13 +2,19 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Auth;
 
 Route::get('/', function () {
-    return view('main', ["message"=>""]);
+    return view('main', ["message"=>"main"]);
 });
 
 Route::get('/contacts', function () {
-    return view('contacts');
+    $users = DB::select('select * from users where id = ?', [1]);
+//    dump($users);
+//    return;
+    return view('contacts', ['users' => $users]);
 });
 
 Route::get('/billboard', function () {
@@ -20,6 +26,19 @@ Route::get('/main', function () {
 });
 
 Route::get('/dashboard', function () {
+//    $user = DB::connection('snt')->select('select * from clients where id = ?', [1]);
+    $user = DB::select('select * from users where id = ?', [1]);
+    dump($user);
+
+    if (Auth::check()) {
+        /**
+         * После проверки уже можешь получать любое свойство модели
+         * пользователя через фасад Auth, например id
+         */
+        $id = Auth::user()->id;
+        dump($id);
+    }
+//    return;
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
