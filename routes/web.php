@@ -18,6 +18,8 @@ Route::get('/contacts', function () {
 });
 
 Route::get('/billboard', function () {
+    $client = DB::connection('pgsql2')->select('select * from clients where id = ?', [1]);
+    dump($client);
     return view('billboard');
 });
 
