@@ -19,7 +19,7 @@ Route::get('/contacts', function () {
 
 Route::get('/billboard', function () {
     $client = DB::connection('mysql2')->select('select * from clients where id = ?', [1]);
-    dump($client);
+    //dump($client);
     return view('billboard');
 });
 

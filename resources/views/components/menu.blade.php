@@ -3,11 +3,11 @@
         <nav>
             <ul class="navbar hb ld od pd wd lh wn zn ao bo">
                 <li>
-                    <a href="/" class="{{ request()->is('') ? 'active' : ''}} menu-scroll ib od pd lh mh sh gi cj ik">Главная</a>
+                    <a href="{{ url('/') }}" data-url="--{{ request()->url() }}" class="{{ request()->is('') ? 'active' : ''}} menu-scroll ib od pd lh mh sh gi cj ik">Главная</a>
                 </li>
 
                 <li>
-                    <a href="{{ url('/billboard') }}" class="{{ request()->is('billboard') ? 'active' : ''}} menu-scroll ib od pd lh mh sh gi cj ik">Доска объявлений</a>
+                    <a href="{{ url('/billboard') }}" data-url="{{ request()->segment(2) }}"  class="{{ request()->is('billboard') ? 'active' : ''}} menu-scroll ib od pd lh mh sh gi cj ik">Доска объявлений</a>
                 </li>
 
                 <li>
