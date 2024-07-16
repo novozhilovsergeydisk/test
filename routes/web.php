@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Config;
 
 Route::get('/', function () {
     return view('main', ["message"=>"main"]);
@@ -18,8 +19,10 @@ Route::get('/contacts', function () {
 });
 
 Route::get('/billboard', function () {
-    $client = DB::connection('mysql2')->select('select * from clients where id = ?', [1]);
-    //dump($client);
+    $db_conn = env('DB_CONNECTION_ALT');
+//    dd($db_conn);
+    $client = DB::connection($db_conn)->select('select * from clients where id = ?', [1]);
+//    dump($client[0]->last_name);
     return view('billboard');
 });
 
