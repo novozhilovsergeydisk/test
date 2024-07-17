@@ -23,5 +23,8 @@
     "Registration": "Регистрация",
     "Saved.": "Сохранено.",
     "Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.": "Забыли пароль? Без проблем. Просто сообщите нам свой адрес электронной почты, и мы вышлем вам ссылку для сброса пароля, которая позволит вам выбрать новый.",
-    "Email Password Reset Link": "Ссылка для сброса пароля"
+    "Email Password Reset Link": "Ссылка для сброса пароля",
+    "These credentials do not match our records.": "Эти учетные данные не соответствуют нашим записям.",
+    "The provided password is incorrect.": "Предоставленный пароль неверен.",
+    "Too many login attempts. Please try again in :seconds seconds.": "Слишком много попыток входа. Пожалуйста, повторите попытку через несколько секунд :seconds."
 }
