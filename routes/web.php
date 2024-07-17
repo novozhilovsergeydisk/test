@@ -5,7 +5,6 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Config;
 
 Route::get('/', function () {
     return view('main', ["message"=>"main"]);
@@ -39,9 +38,9 @@ Route::get('/dashboard', function () {
          * пользователя через фасад Auth, например id
          */
         $id = Auth::user()->id;
-        dump($id);
+//        dump($id);
         $user = DB::select('select * from users where id = ?', [$id]);
-        dump($user);
+//        dump($user);
     }
 //    return;
     return view('dashboard');

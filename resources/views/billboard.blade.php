@@ -1,8 +1,8 @@
 <x-main-layout>
-    <h1 class="mt-8 mb-6 mh nh zh fi ck">Billboard</h1>
+    <h1 class="mt-8 mb-6 mh nh zh fi ck">Доска объявлений</h1>
 
     <p class="mt-4 mb-2 sh gi">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet aut autem consequuntur culpa cum debitis deleniti distinctio eaque eius error esse et, eveniet ex fuga fugit ipsum libero minima modi molestiae molestias natus necessitatibus nemo odit praesentium quae quam quas quibusdam quidem reprehenderit sunt veniam, voluptate voluptatem. A alias autem blanditiis distinctio fugit, impedit incidunt quidem veritatis vitae voluptate. A amet asperiores beatae eveniet molestias nam necessitatibus quasi. Accusantium adipisci aperiam architecto beatae culpa cum dignissimos doloremque fugiat fugit hic, illo in incidunt iure maiores, minima nam non nulla placeat porro possimus praesentium quaerat quas rem soluta suscipit voluptas.
+        Объявлений нет!
     </p>
 
 </x-main-layout>
